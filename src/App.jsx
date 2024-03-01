@@ -10,16 +10,13 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1>Pokedex</h1>
-      <Routes>
-        <Route path='/' element={<HomePage/>}/>
-        <Route element={<ProtectedRoutes/>}>
-          <Route path="/pokedex" element={<PokedexPage/>}/>
-          <Route path="/pokedex/:id" element={<PokeidPage/>}/>
-        </Route>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path='/' element={<HomePage/>}/>
+      <Route element={<ProtectedRoutes/>}>
+        <Route path="/pokedex" element={<PokedexPage/>}/>
+        <Route path="/pokedex/:id" element={<PokeidPage/>}/>
+      </Route>
+    </Routes>
   )
 }
 

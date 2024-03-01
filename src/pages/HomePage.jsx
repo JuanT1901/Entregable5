@@ -19,7 +19,7 @@ const HomePage = () => {
       <h1>¡Hola entrenador!</h1>
       <h2>Para poder comenzar, dame tu nombre</h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" ref={textInput}/>
+        <input className='text-black' type="text" ref={textInput}/>
         <button>Comenzar</button>
       </form>
     </div>
