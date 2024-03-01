@@ -17,7 +17,7 @@ const PokeCard = ({ url }) => {
   return (
     <article onClick={handleClick}>
       <picture>
-        <img className="w-[250px]" src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+        <img className="h-full w-full object-cover" src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
       </picture>
       <h3>{pokemon?.name}</h3>
     </article>

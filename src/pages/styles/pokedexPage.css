@@ -1,0 +1,9 @@
+.pokedex {
+  padding-bottom: 25px;
+}
+
+.poke__header div {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}

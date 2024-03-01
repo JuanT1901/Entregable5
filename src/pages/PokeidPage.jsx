@@ -16,7 +16,7 @@ const PokeidPage = () => {
   return (
     <article>
       <picture>
-        <img className="w-[250px]" src={pokeData?.sprites.other['official-artwork'].front_default} alt="" />
+        <img src={pokeData?.sprites.other['official-artwork'].front_default} alt="" />
       </picture>
       <h3>{pokeData?.name}</h3>
     </article>
