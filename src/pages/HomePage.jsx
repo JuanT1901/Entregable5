@@ -18,7 +18,7 @@ const HomePage = () => {
     <div>
       <div className="min-h-[87vh] flex flex-col items-center justify-center">
         <picture className="py-4">
-          <img src="../../public/title.png" alt="" />
+          <img src="./title.png" alt="" />
         </picture>
         <h1 className="text-red-600 font-bold pt-5" >¡Hola entrenador!</h1>
         <h2 className="pb-7" >Para poder comenzar, dame tu nombre</h2>
