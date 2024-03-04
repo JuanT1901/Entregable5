@@ -20,11 +20,11 @@ const SelectType = ({ setSelectValue }) => {
   }
 
   return (
-    <select className="text-black" onChange={handleChange} ref={textSelect}>
-      <option value="allPokemons">All pokemons</option>
+    <select className="text-black w-[34%] shadow-lg border-0 bg-white p-3" onChange={handleChange} ref={textSelect}>
+      <option value="allPokemons">All Pokemon</option>
       {types?.results.map((type) => (
         <option value={type.url} key={type.url}>
-          {type.name}
+          {(type?.name)?.charAt(0).toUpperCase() + (type?.name.slice(1))}
         </option>
       ))}
     </select>

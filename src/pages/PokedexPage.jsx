@@ -16,7 +16,7 @@ const PokedexPage = () => {
 
   useEffect(() => {
     if(selectValue === 'allPokemons'){
-      const url = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+      const url = 'https://pokeapi.co/api/v2/pokemon/?limit=8';
       getPokemons(url);
     } else {
       getPerType(selectValue);
@@ -40,15 +40,23 @@ const PokedexPage = () => {
   return (
     <div>
       <div className="pokedex">
-        <div className="w-full h-[8vh] m-0 flex flex-col justify-star bg-red-600"></div>
-        <div className="w-full h-[5vh] m-0 flex flex-col justify-start bg-black"></div>
+        <div className="w-full h-[10vh] m-0 flex flex-col justify-star bg-red-600"></div>
+        <div className="w-full h-[5vh] m-0 flex flex-col justify-start bg-black shadow-md"></div>
+        <picture className="absolute top-[18px] left-[10%]">
+          <img className="w-80" src="./title.png" alt="" />
+        </picture>
+        <div className="absolute top-[57px] right-[8%] min-w-full flex justify-end">
+            <div className="relative w-[70px] h-[70px] bg-white border-[6px] border-solid border-black rounded-[50%] shadow-md">
+              <div className="absolute bottom-[15%] right-[15%] w-[40px] h-[40px] bg-slate-800 border-[6px] border-solid border-black rounded-[50%]"></div>
+            </div>
+          </div>
       </div>
-      <div>
-        <section className="poke__header">
-          <h3><span className="text-red-600">Bienvenido {trainerName}.</span>  Aquí podrás encontrar tu pokemon favorito</h3>
-          <div className="min-w-full">
-            <form className='w-[40%]' onSubmit={handleSubmit}>
-              <input className='text-black border-0 h-[40px] w-[70%] shadow-lg' type="text" ref={textInput} placeholder="Busca tu Pokémon"/>
+      <div className="flex flex-col justify-center items-center max-w-[80%] m-auto">
+        <section className="poke__header w-full flex flex-col items-start">
+          <h3 className="font-light"><span className="text-red-600 font-semibold">Bienvenido {trainerName},</span>  aquí podrás encontrar tu Pokémon favorito</h3>
+          <div id="poke__form" className="py-8">
+            <form className='w-[64%]' onSubmit={handleSubmit}>
+              <input className='text-black border-0 h-[40px] w-[70%] shadow-md p-3' type="text" ref={textInput} placeholder="Busca tu Pokémon"/>
               <button className="bg-red-600 text-white w-[30%] border-0 h-[40px] cursor-pointer hover:bg-red-400">Buscar</button>
             </form>
             <SelectType

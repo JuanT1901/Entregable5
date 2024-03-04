@@ -1,0 +1,118 @@
+.poke__stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+hr{
+  min-width: 100%;
+}
+
+.poke__bg {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0px;
+  border-radius: 5px 5px 0 0;
+}
+
+.poke__img {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  padding-top: 20px;
+  z-index: 10;
+}
+
+.titles {
+  color: rgb(195, 195, 195);
+  font-weight: 300;
+  font-size: small;
+}
+
+.poke__name {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.poke__type {
+  font-size: medium;
+  font-weight: 300;
+
+}
+
+h4.titles {
+  padding-bottom: 8px;
+}
+
+/* Type:Grass */
+
+div.grass {
+  background: linear-gradient(hsla(179, 39%, 64%, 1), hsla(154, 39%, 76%, 1), hsla(87, 47%, 75%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.grass{
+  border: none;
+  color: hsla(173, 21%, 32%, 1);
+}
+
+.grass {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(136, 37%, 78%, 1), hsla(87, 47%, 75%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Fire */
+
+div.fire {
+  background: linear-gradient(hsla(359, 92%, 70%, 1), hsla(16, 77%, 52%, 1), hsla(43, 81%, 51%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.fire{
+  border: none;
+  color: hsla(13, 79%, 56%, 1);
+}
+
+.fire {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(34, 80%, 51%, 1), hsla(13, 79%, 56%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Water */
+
+.grass {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(136, 37%, 78%, 1), hsla(87, 47%, 75%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Fire */
+
+div.water {
+  background: linear-gradient(hsla(214, 64%, 21%, 1), hsla(214, 97%, 53%, 1), hsla(214, 80%, 73%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.water{
+  border: none;
+  color: hsla(214, 97%, 53%, 1);
+}
+
+.water {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(214, 100%, 76%, 1), hsla(214, 97%, 53%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
