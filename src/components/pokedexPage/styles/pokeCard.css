@@ -90,15 +90,6 @@ h3.fire{
 
 /* Type:Water */
 
-.grass {
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(to bottom, hsla(136, 37%, 78%, 1), hsla(87, 47%, 75%, 1)) border-box;
-  border-radius: 50em;
-  border: 4px solid transparent;
-}
-
-/* Type:Fire */
-
 div.water {
   background: linear-gradient(hsla(214, 64%, 21%, 1), hsla(214, 97%, 53%, 1), hsla(214, 80%, 73%, 1)); 
   border: none;
@@ -113,6 +104,286 @@ h3.water{
 .water {
   background: linear-gradient(white, white) padding-box,
               linear-gradient(to bottom, hsla(214, 100%, 76%, 1), hsla(214, 97%, 53%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Bug */
+
+div.bug {
+  background: linear-gradient(hsla(119, 63%, 62%, 1), hsla(119, 51%, 46%, 1), hsla(119, 100%, 83%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.bug {
+  border: none;
+  color: hsla(119, 43%, 50%, 1);
+}
+
+.bug {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(119, 43%, 50%, 1), hsla(87, 47%, 75%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:normal */
+
+div.normal {
+  background: linear-gradient(hsla(347, 17%, 39%, 1), hsla(347, 38%, 58%, 1), hsla(347, 33%, 37%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.normal {
+  border: none;
+  color: hsla(347, 17%, 39%, 1);
+}
+
+.normal {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(347, 17%, 39%, 1), hsla(347, 35%, 58%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Fighting */
+
+div.fighting {
+  background: linear-gradient(hsla(12, 56%, 38%, 1), hsla(12, 87%, 59%, 1), hsla(12, 51%, 58%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.fighting {
+  border: none;
+  color: hsla(12, 56%, 38%, 1);
+}
+
+.fighting {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(12, 56%, 38%, 1), hsla(12, 80%, 56%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Poison */
+
+div.poison {
+  background: linear-gradient(hsla(270, 46%, 35%, 1), hsla(270, 70%, 64%, 1), hsla(270, 100%, 80%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.poison {
+  border: none;
+  color: hsla(270, 46%, 35%, 1);
+}
+
+.poison {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(270, 46%, 35%, 1), hsla(270, 89%, 77%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Ghost */
+
+div.ghost {
+  background: linear-gradient(hsla(237, 35%, 30%, 1), hsla(237, 42%, 46%, 1), hsla(237, 57%, 66%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.ghost {
+  border: none; 
+  color: hsla(237, 35%, 30%, 1);
+}
+
+.ghost {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(237, 35%, 30%, 1), hsla(237, 66%, 61%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Rock */
+
+div.rock {
+  background: linear-gradient(hsla(0, 0%, 49%, 1), hsla(237, 3%, 57%, 1), hsla(0, 0%, 83%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.rock {
+  border: none; 
+  color: hsla(0, 0%, 49%, 1);
+}
+
+.rock {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(0, 0%, 49%, 1), hsla(237, 1%, 73%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Dark */
+
+div.dark {
+  background: linear-gradient(hsla(165, 40%, 2%, 1), hsla(165, 16%, 6%, 1), hsla(165, 2%, 36%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.dark {
+  border: none; 
+  color: hsla(165, 40%, 2%, 1);
+}
+
+.dark {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(165, 12%, 5%, 1), hsla(0, 0%, 31%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Ice */
+
+div.ice {
+  background: linear-gradient(hsla(198, 64%, 65%, 1), hsla(198, 88%, 68%, 1), hsla(198, 97%, 87%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.ice {
+  border: none; 
+  color: hsla(198, 64%, 65%, 1);
+}
+
+.ice {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(198, 64%, 65%, 1), hsla(198, 86%, 88%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Steel */
+
+div.steel {
+  background: linear-gradient(hsla(160, 10%, 41%, 1), hsla(160, 9%, 49%, 1), hsla(0, 0%, 66%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.steel {
+  border: none; 
+  color: hsla(160, 10%, 41%, 1);
+}
+
+.steel {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(160, 10%, 41%, 1), hsla(160, 16%, 66%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Dragon */
+
+div.dragon {
+  background: linear-gradient(hsla(187, 35%, 43%, 1), hsla(187, 35%, 51%, 1), hsla(187, 20%, 70%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.dragon {
+  border: none; 
+  color: hsla(187, 35%, 43%, 1);
+}
+
+.dragon {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(187, 35%, 43%, 1), hsla(187, 57%, 72%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Fairy */
+
+div.fairy {
+  background: linear-gradient(hsla(340, 70%, 35%, 1), hsla(340, 55%, 49%, 1), hsla(340, 45%, 65%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.fairy {
+  border: none; 
+  color: hsla(340, 70%, 35%, 1);
+}
+
+.fairy {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(340, 70%, 35%, 1), hsla(340, 48%, 56%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Electric */
+
+div.electric {
+  background: linear-gradient(hsla(59, 100%, 67%, 1), hsla(59, 100%, 40%, 1), hsla(48, 100%, 73%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.electric {
+  border: none; 
+  color: rgb(201, 193, 51);
+}
+
+.electric {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(55, 86%, 70%, 1), hsla(55, 86%, 56%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Ground */
+
+div.ground {
+  background: linear-gradient(hsla(36, 85%, 21%, 1), hsla(36, 68%, 32%, 1), hsla(36, 66%, 53%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.ground {
+  border: none; 
+  color: hsla(36, 85%, 21%, 1);
+}
+
+.ground {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(36, 85%, 21%, 1), hsla(36, 77%, 35%, 1)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Type:Psychic */
+
+div.psychic {
+  background: linear-gradient( hsla(266, 76%, 54%, 1), hsla(266, 76%, 46%, 1), hsla(266, 76%, 64%, 1)); 
+  border: none;
+  border-radius: 0;
+}
+
+h3.psychic {
+  border: none; 
+  color: hsla(266, 76%, 59%, 1);
+}
+
+.psychic {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, hsla(273, 72%, 36%, 1), hsla(273, 72%, 43%, 1)) border-box;
   border-radius: 50em;
   border: 4px solid transparent;
 }
