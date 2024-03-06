@@ -57,7 +57,7 @@ const PokedexPage = () => {
         <div className="w-full h-[100px] m-0 flex flex-col justify-star bg-red-600"></div>
         <div className="w-full h-[45px] m-0 flex flex-col justify-start bg-black shadow-md"></div>
         <picture className="absolute top-[48px] left-[10%]">
-          <img className="w-80" src="../../public/title.png" alt="" />
+          <img className="w-80" src="/title.png" alt="" />
         </picture>
         <div className="absolute top-[87px] right-[8%] min-w-full flex justify-end">
           <div className="relative w-[70px] h-[70px] bg-white border-[6px] border-solid border-black rounded-[50%] shadow-md">

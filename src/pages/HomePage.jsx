@@ -20,7 +20,7 @@ const HomePage = () => {
       <div className="min-h-[87vh] flex flex-col items-center justify-center">
         <div className="poke__home">
           <picture className="poke__logo">
-            <img src="../../public/title.png" alt="" />
+            <img src="/title.png" alt="" />
           </picture>
           <h1 className="text-red-600 font-bold pt-5" >¡Hi trainer!</h1>
           <h2 className="pt-1 pb-5 font-light text-lg" >In order to begin, give me your name</h2>
