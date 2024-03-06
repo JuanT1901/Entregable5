@@ -1,0 +1,147 @@
+.container {
+  margin: 5rem auto;
+}
+
+.poke__bg {
+  position: absolute;
+  top: 0;
+  height: 9rem;
+  z-index: 10;
+}
+
+.poke__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 42rem;
+  max-width: 50%;
+  margin: auto;
+  background-color: white;
+}
+
+.poke__id__img {
+  position: absolute;
+  z-index: 10;
+  top: -100px;
+  width: 260px;
+}
+
+.poke__info {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  bottom: 2rem;
+  width: 30rem;
+}
+
+
+#id__number {
+  border: 1px solid #ececec;
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 20px;
+  border-radius: 1px;
+}
+
+.poke__id__name {
+  font-size: xx-large;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.wh__title{
+  font-size: 10px;
+}
+
+.poke__physic {
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  gap: 5rem;
+}
+
+.poke__title__stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+}
+
+.poke__types__abilities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10rem
+}
+
+.division {
+  border-color: #f8f8f8;
+  width: 20%;
+}
+
+.pokeball__img {
+  width: 70px;
+}
+
+.title__stats {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  background-color: orange;
+}
+
+.back {
+  background-color: #ececec;
+}
+
+.bars {
+  display: flex;
+  height: 20px;
+  margin: auto;
+  width: 90%;
+}
+
+.poke__id__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.moves__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.move__stats {
+  width: 30rem
+}
+
+.moves__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.poke__moves {
+  background-color: #d2d2d2;
+  border-radius: 50px;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 15px;
+}

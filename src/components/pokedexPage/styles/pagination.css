@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.button__container > button {
+  background-color: hsla(0, 79%, 48%, 1);
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.button__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 50%;
+  margin: auto;
+  padding: 0 0 10px 0;
+}

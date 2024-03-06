@@ -18,15 +18,17 @@ const HomePage = () => {
   return (
     <div>
       <div className="min-h-[87vh] flex flex-col items-center justify-center">
-        <picture className="py-4 w-[50%]">
-          <img src="./title.png" alt="" />
-        </picture>
-        <h1 className="text-red-600 font-bold pt-5" >¡Hola entrenador!</h1>
-        <h2 className="pt-1 pb-5 font-light text-lg" >Para poder comenzar, dame tu nombre</h2>
-        <form onSubmit={handleSubmit} className="flex min-w-[50%]">
-          <input className='text-black border-0 h-[40px] w-[70%] shadow-lg cursor-text p-5' type="text" placeholder="Tu nombre..." ref={textInput}/>
-          <button className="bg-red-600 text-white border-0 h-[40px] w-[40%] cursor-pointer hover:bg-red-400">Comenzar</button>
-        </form>
+        <div className="poke__home">
+          <picture className="poke__logo">
+            <img src="../../public/title.png" alt="" />
+          </picture>
+          <h1 className="text-red-600 font-bold pt-5" >¡Hi trainer!</h1>
+          <h2 className="pt-1 pb-5 font-light text-lg" >In order to begin, give me your name</h2>
+          <form onSubmit={handleSubmit} className="poke__form">
+            <input className='text-black border-0 h-[40px] w-[70%] shadow-lg cursor-text p-5' type="text" placeholder="Your name..." ref={textInput}/>
+            <button className="bg-red-600 text-white border-0 h-[40px] w-[40%] cursor-pointer hover:bg-red-400 font-semibold text-lg">Begin!</button>
+          </form>
+        </div>
       </div>
         <div>
           <div className="w-full h-[8vh] m-0 flex flex-col justify-end bg-red-600"></div>

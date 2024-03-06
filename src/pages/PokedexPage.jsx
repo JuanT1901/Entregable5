@@ -19,34 +19,37 @@ const PokedexPage = () => {
 
   useEffect(() => {
     if (selectValue === "allPokemons") {
-      const url = `https://pokeapi.co/api/v2/pokemon/?limit=100`;
+      const url = `https://pokeapi.co/api/v2/pokemon/?limit=150`;
       getPokemons(url);
     } else {
       getPerType(selectValue);
     }
   }, [selectValue]);
-
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(setPokemonName(textInput.current.value.trim().toLowerCase()));
     textInput.current.value = "";
   };
-
+  
   const cbFilter = () => {
     if (pokemonName) {
-      return currentPokemon?.filter((element) =>
-        element.name.includes(pokemonName)
+      return pokemons?.results.filter((element) =>
+      element.name.includes(pokemonName)
       );
     } else {
-      return currentPokemon;
+      return pokemons?.results;
     }
   };
 
-  //Get current pokemons
+  //Pagination
+  
+  const quantity = 10;
+  const second = currentPage * quantity;
+  const first = second - quantity;
+  const totalPages = location && Math.ceil(cbFilter()?.length / quantity);
 
-  const indexOfLastPost = currentPage * pokemonPerPage;
-  const indexOfFirstPost = indexOfLastPost - pokemonPerPage;
-  const currentPokemon = pokemons?.results.slice(indexOfFirstPost,indexOfLastPost);
+  const pokemonPagination = cbFilter() && cbFilter()?.slice(first, second);
 
   return (
     <div>
@@ -54,7 +57,7 @@ const PokedexPage = () => {
         <div className="w-full h-[100px] m-0 flex flex-col justify-star bg-red-600"></div>
         <div className="w-full h-[45px] m-0 flex flex-col justify-start bg-black shadow-md"></div>
         <picture className="absolute top-[48px] left-[10%]">
-          <img className="w-80" src="./title.png" alt="" />
+          <img className="w-80" src="../../public/title.png" alt="" />
         </picture>
         <div className="absolute top-[87px] right-[8%] min-w-full flex justify-end">
           <div className="relative w-[70px] h-[70px] bg-white border-[6px] border-solid border-black rounded-[50%] shadow-md">
@@ -66,9 +69,9 @@ const PokedexPage = () => {
         <section className="poke__header w-full flex flex-col items-start">
           <h3 className="font-light">
             <span className="text-red-600 font-semibold">
-              Bienvenido {trainerName},
+              Welcome {trainerName},
             </span>{" "}
-            aquí podrás encontrar tu Pokémon favorito
+            here you can found your favorite Pokemon
           </h3>
           <div id="poke__form" className="py-8">
             <form className="w-[64%]" onSubmit={handleSubmit}>
@@ -76,26 +79,34 @@ const PokedexPage = () => {
                 className="text-black border-0 h-[40px] w-[70%] shadow-md p-3"
                 type="text"
                 ref={textInput}
-                placeholder="Busca tu Pokémon"
+                placeholder="Search your Pokemon"
               />
-              <button className="bg-red-600 text-white w-[30%] border-0 h-[40px] cursor-pointer hover:bg-red-400">
-                Buscar
+              <button className="bg-red-600 text-white w-[30%] border-0 h-[40px] cursor-pointer hover:bg-red-400 font-semibold text-lg">
+                Search
               </button>
             </form>
             <SelectType setSelectValue={setSelectValue} />
           </div>
+        <Pagination
+          pokemonPerPage={pokemonPerPage}
+          totalPokemons={cbFilter()?.length}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          totalPages={totalPages}
+        />
         </section>
         <section className="poke__container">
-          {cbFilter()?.map((pokemon) => (
+          {pokemonPagination?.map((pokemon) => (
             <PokeCard key={pokemon.url} url={pokemon.url} />
           ))}
         </section>
       </div>
       <Pagination
         pokemonPerPage={pokemonPerPage}
-        totalPokemons={pokemons?.results.length}
+        totalPokemons={cbFilter()?.length}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
+        totalPages={totalPages}
       />
     </div>
   );
